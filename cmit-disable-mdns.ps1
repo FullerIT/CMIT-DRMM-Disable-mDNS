@@ -12,7 +12,7 @@ Red Team Tool for lateral movement: https://github.com/lgandx/Responder
 # Define the registry path and value
 $registryPath = "HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters"
 $registryName = "EnableMDNS"
-$expectedValue  = 0
+$desiredValue = 0
 
 # Check if the registry path exists
 if (-not (Test-Path -Path $registryPath)) {
